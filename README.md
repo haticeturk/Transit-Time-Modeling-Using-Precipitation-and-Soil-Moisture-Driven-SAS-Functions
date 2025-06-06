@@ -8,7 +8,7 @@ This repository provides Python code for a **catchment-scale tracer transport mo
 Two SAS model variants are implemented:
 
 1. **`Tracer_Mod_Wettness.py`**  
-   - Time-variable SAS shape for the **root zone** depends on the ratio of current storage \(S_r\) to maximum storage \(S_{r,\text{max}}\), representing a soil-moisture-dependent preference for younger water.
+   - Time-variable SAS shape for the **root zone** depends on the ratio of current storage to maximum storage, representing a soil-moisture-dependent preference for younger water.
 
 2. **`Tracer_Mod_Ptresh_Wetness.py`**  
    - Extends the above by **adding a rainfall intensity threshold (`Ptresh`)**:  
@@ -42,11 +42,3 @@ To run a basic test with sample data, execute:
 ```bash
 python Model_Run.py
 
-@article{turk2024soil,
-  title={Soil moisture and precipitation intensity control the transit time distribution of quick flow in a flashy headwater catchment},
-  author={T{\"u}rk, Hatice and Stumpp, Christine and Hrachowitz, Markus and Schulz, Karsten and Strauss, Peter and Bl{\"o}schl, G{\"u}nter and Stockinger, Michael},
-  journal={Hydrology and Earth System Sciences Discussions},
-  volume={2024},
-  pages={1--33},
-  year={2024}
-}
